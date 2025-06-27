@@ -1,0 +1,64 @@
+{
+  "name": "notification_history",
+  "version": "1.0.1",
+  "description": "A reusable notification handling package for React Native/Expo with SQLite storage",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.test.ts"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": [
+        "ts-jest",
+        {
+          "tsconfig": "tsconfig.test.json"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "notifications",
+    "sqlite",
+    "tsyringe"
+  ],
+  "author": "Albert Stany <albert.stany@seqato.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlbertStany/PushNotoficationHistoryPackageReactNative.git"
+  },
+  "dependencies": {
+    "expo-device": "~5.0.0",
+    "expo-notifications": "~0.18.0",
+    "expo-sqlite": "~11.5.0",
+    "tsyringe": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.4",
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
+    "typescript": "~5.8.3"
+  },
+  "peerDependencies": {
+    "@react-navigation/native": "^6.1.0",
+    "@react-navigation/native-stack": "^6.9.0",
+    "expo": ">=48.0.0",
+    "react": "^18.2.0",
+    "react-native": "^0.72.0"
+  }
+}
